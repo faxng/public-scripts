@@ -1,0 +1,62 @@
+-- cash (farm)
+
+while true do
+wait(0.5)
+local epic = game.Workspace:WaitForChild("Banknote")
+local epic2 = game.Workspace.Banknote:WaitForChild("Handle")
+local epic3 = game.Workspace.Banknote.Handle
+local epic4 = game.Players.LocalPlayer.Character.HumanoidRootPart
+repeat
+wait()
+epic3.CFrame = epic4.CFrame
+until game.Players.LocalPlayer.Character:FindFirstChild("Banknote")
+wait(0.5)
+game.Players.LocalPlayer.Character.Banknote:Activate()
+end
+
+-- arrows (farm)
+
+while true do
+wait(0.5)
+local dab = game.Workspace:WaitForChild("Arrow")
+local dab2 = game.Workspace.Arrow:WaitForChild("Handle")
+local dab3 = game.Workspace.Arrow.Handle
+local dab4 = game.Players.LocalPlayer.Character.HumanoidRootPart
+repeat
+wait()
+dab3.CFrame = dab4.CFrame
+until game.Players.LocalPlayer.Character:FindFirstChild("Arrow")
+wait(0.5)
+game.Players.LocalPlayer.Character.Arrow:Activate()
+end
+
+-- rokas (farm)
+
+while true do
+wait(0.5)
+local undab = game.Workspace:WaitForChild("Rokakaka Fruit")
+local undab2 = game.Workspace["Rokakaka Fruit"]:WaitForChild("Handle")
+local undab3 = game.Workspace["Rokakaka Fruit"].Handle
+local undab4 = game.Players.LocalPlayer.Character.HumanoidRootPart
+repeat
+wait()
+undab3.CFrame = undab4.CFrame
+until game.Players.LocalPlayer.Character:FindFirstChild("Rokakaka Fruit")
+wait(0.5)
+game.Players.LocalPlayer.Character["Rokakaka Fruit"]:Activate()
+end
+
+-- mask tp (nofarm)
+
+for i,v in pairs(game.Workspace:GetDescendants()) do
+if v.ClassName == "Tool" and v.Name == "Vampire Mask" then
+	wait(1)
+local epicas = game.Players.LocalPlayer.Character.HumanoidRootPart
+local unepicas = v.Handle
+epicas.CFrame = unepicas.CFrame
+else
+return
+end
+end
+
+-- made by Brad#8107 on discord! (Faxng scripter)
