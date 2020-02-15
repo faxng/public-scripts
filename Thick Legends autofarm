@@ -119,6 +119,8 @@ rpart.CFrame = CFrame.new(Vector3.new(753.364502, 21874.1367, 2073.98877))
 wait(1)
 rpart.CFrame = CFrame.new(Vector3.new(707.365295, 30255.0156, 2035.49048))
 warn('ALL PLACES UNLOCKED!')
+warn('ending your life for anti-cheat no-detect :D')
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
 
 wait(2)
 
