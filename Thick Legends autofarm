@@ -1,89 +1,150 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{
+Title = "Thick Legends",
+Text = "Take a few seconds to read the changelog (F9)",
+Duration = 10,
+})
+
+warn('changelog: V1')
+warn('-- made the script')
+warn('-- added commands r (/e r is supported) to rejoin and stop the autofarm.')
+warn('added protection so you dont get detected using it!')
+warn('changelog: end')
+
+wait(5)
+
 epicburgers = {"Burger6", "Burger5", "Burger4", "Burger3", "Burger2", "Burger"}
 dabcoins = {"Coin6", "Coin5", "Coin4", "Coin3", "Coin2", "Coin"}
 
 function epic1()
-warn('done epic 1')
+print('done epic 1')
 burg1 = game.Workspace.PickupItems:WaitForChild(epicburgers[1])
 me = game.Players.LocalPlayer.Character.HumanoidRootPart
 burg1.CFrame = me.CFrame
 end
 
 function epic2()
-warn('done epic 2')
+print('done epic 2')
 burg2 = game.Workspace.PickupItems:WaitForChild(epicburgers[2])
 me = game.Players.LocalPlayer.Character.HumanoidRootPart
 burg2.CFrame = me.CFrame
 end
 
 function epic3()
-warn('done epic 3')
+print('done epic 3')
 burg3 = game.Workspace.PickupItems:WaitForChild(epicburgers[3])
 me = game.Players.LocalPlayer.Character.HumanoidRootPart
 burg3.CFrame = me.CFrame
 end
 
 function epic4()
-warn('done epic 4')
+print('done epic 4')
 burg4 = game.Workspace.PickupItems:WaitForChild(epicburgers[4])
 me = game.Players.LocalPlayer.Character.HumanoidRootPart
 burg4.CFrame = me.CFrame
 end
 
 function epic5()
-warn('done epic 5')
+print('done epic 5')
 burg5 = game.Workspace.PickupItems:WaitForChild(epicburgers[5])
 me = game.Players.LocalPlayer.Character.HumanoidRootPart
 burg5.CFrame = me.CFrame
 end
 
 function epic6()
-warn('done epic 6')
+print('done epic 6')
 burg6 = game.Workspace.PickupItems:WaitForChild(epicburgers[6])
 me = game.Players.LocalPlayer.Character.HumanoidRootPart
 burg6.CFrame = me.CFrame
 end
 
 function dab1()
-warn('done dab 1')
+print('done dab 1')
 coin1 = game.Workspace.PickupItems:WaitForChild(dabcoins[1])
 me = game.Players.LocalPlayer.Character.HumanoidRootPart
 coin1.CFrame = me.CFrame
 end
 
 function dab2()
-warn('done dab 2')
+print('done dab 2')
 coin2 = game.Workspace.PickupItems:WaitForChild(dabcoins[2])
 me = game.Players.LocalPlayer.Character.HumanoidRootPart
 coin2.CFrame = me.CFrame
 end
 
 function dab3()
-warn('done dab 3')
+print('done dab 3')
 coin3 = game.Workspace.PickupItems:WaitForChild(dabcoins[3])
 me = game.Players.LocalPlayer.Character.HumanoidRootPart
 coin3.CFrame = me.CFrame
 end
 
 function dab4()
-warn('done dab 4')
+print('done dab 4')
 coin4 = game.Workspace.PickupItems:WaitForChild(dabcoins[4])
 me = game.Players.LocalPlayer.Character.HumanoidRootPart
 coin4.CFrame = me.CFrame
 end
 
 function dab5()
-warn('done dab 5')
+print('done dab 5')
 coin5 = game.Workspace.PickupItems:WaitForChild(dabcoins[5])
 me = game.Players.LocalPlayer.Character.HumanoidRootPart
 coin5.CFrame = me.CFrame
 end
 
 function dab6()
-warn('done dab 6')
+print('done dab 6')
 coin6 = game.Workspace.PickupItems:WaitForChild(dabcoins[6])
 me = game.Players.LocalPlayer.Character.HumanoidRootPart
 coin6.CFrame = me.CFrame
 end
+
+-- place unlocks
+rpart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rpart.MassPart:Destroy()
+wait(0.5)
+rpart.CFrame = CFrame.new(Vector3.new(792.022339, 1667.59656, 2188.81665))
+wait(1)
+rpart.CFrame = CFrame.new(Vector3.new(755.23407, 3245.05786, 2072.65942))
+wait(1)
+rpart.CFrame = CFrame.new(Vector3.new(686.256409, 5908.29688, 2048.33105))
+wait(1)
+rpart.CFrame = CFrame.new(Vector3.new(748.952209, 9126.31641, 2084.4353))
+wait(1)
+rpart.CFrame = CFrame.new(Vector3.new(688.492798, 12795.7314, 2045.11609))
+wait(1)
+rpart.CFrame = CFrame.new(Vector3.new(742.455139, 16551.8457, 2012.90918))
+wait(1)
+rpart.CFrame = CFrame.new(Vector3.new(753.364502, 21874.1367, 2073.98877))
+wait(1)
+rpart.CFrame = CFrame.new(Vector3.new(707.365295, 30255.0156, 2035.49048))
+warn('ALL PLACES UNLOCKED!')
+
+wait(2)
+
+function warnhelp()
+warn('-- starting the farm!')
+warn('-- say r or /e r to rejoin and stop it!')
+end
+
+warnhelp()
+
+game:GetService("Players").LocalPlayer.Chatted:Connect(function(msg)
+if (string.lower(msg) == "r") then
+place = game.PlaceId
+service = game:GetService("TeleportService")
+service:Teleport(place)
+end
+end)
+
+game:GetService("Players").LocalPlayer.Chatted:Connect(function(msg)
+if (string.lower(msg) == "/e r") then
+place = game.PlaceId
+service = game:GetService("TeleportService")
+service:Teleport(place)
+end
+end)
+
 
 
 -- loop
@@ -93,10 +154,22 @@ while wait(1) do
 	p = "Punch"
 	s = "Stomp"
 	f = "Food"
-	r:FireServer(p)
-	r:FireServer(s)
-	r:FireServer(f)
-		epic1()
+r:FireServer(p)
+r:FireServer(s)
+r:FireServer(f)
+r:FireServer(p)
+r:FireServer(s)
+r:FireServer(f)
+r:FireServer(p)
+r:FireServer(s)
+r:FireServer(f)
+r:FireServer(p)
+r:FireServer(s)
+r:FireServer(f)
+r:FireServer(p)
+r:FireServer(s)
+r:FireServer(f)
+epic1()
 wait(0.5)
 epic2()
 wait()
@@ -119,4 +192,5 @@ wait()
 dab5()
 wait()
 dab6()
+warnhelp()
 end
