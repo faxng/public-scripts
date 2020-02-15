@@ -1,0 +1,122 @@
+epicburgers = {"Burger6", "Burger5", "Burger4", "Burger3", "Burger2", "Burger"}
+dabcoins = {"Coin6", "Coin5", "Coin4", "Coin3", "Coin2", "Coin"}
+
+function epic1()
+warn('done epic 1')
+burg1 = game.Workspace.PickupItems:WaitForChild(epicburgers[1])
+me = game.Players.LocalPlayer.Character.HumanoidRootPart
+burg1.CFrame = me.CFrame
+end
+
+function epic2()
+warn('done epic 2')
+burg2 = game.Workspace.PickupItems:WaitForChild(epicburgers[2])
+me = game.Players.LocalPlayer.Character.HumanoidRootPart
+burg2.CFrame = me.CFrame
+end
+
+function epic3()
+warn('done epic 3')
+burg3 = game.Workspace.PickupItems:WaitForChild(epicburgers[3])
+me = game.Players.LocalPlayer.Character.HumanoidRootPart
+burg3.CFrame = me.CFrame
+end
+
+function epic4()
+warn('done epic 4')
+burg4 = game.Workspace.PickupItems:WaitForChild(epicburgers[4])
+me = game.Players.LocalPlayer.Character.HumanoidRootPart
+burg4.CFrame = me.CFrame
+end
+
+function epic5()
+warn('done epic 5')
+burg5 = game.Workspace.PickupItems:WaitForChild(epicburgers[5])
+me = game.Players.LocalPlayer.Character.HumanoidRootPart
+burg5.CFrame = me.CFrame
+end
+
+function epic6()
+warn('done epic 6')
+burg6 = game.Workspace.PickupItems:WaitForChild(epicburgers[6])
+me = game.Players.LocalPlayer.Character.HumanoidRootPart
+burg6.CFrame = me.CFrame
+end
+
+function dab1()
+warn('done dab 1')
+coin1 = game.Workspace.PickupItems:WaitForChild(dabcoins[1])
+me = game.Players.LocalPlayer.Character.HumanoidRootPart
+coin1.CFrame = me.CFrame
+end
+
+function dab2()
+warn('done dab 2')
+coin2 = game.Workspace.PickupItems:WaitForChild(dabcoins[2])
+me = game.Players.LocalPlayer.Character.HumanoidRootPart
+coin2.CFrame = me.CFrame
+end
+
+function dab3()
+warn('done dab 3')
+coin3 = game.Workspace.PickupItems:WaitForChild(dabcoins[3])
+me = game.Players.LocalPlayer.Character.HumanoidRootPart
+coin3.CFrame = me.CFrame
+end
+
+function dab4()
+warn('done dab 4')
+coin4 = game.Workspace.PickupItems:WaitForChild(dabcoins[4])
+me = game.Players.LocalPlayer.Character.HumanoidRootPart
+coin4.CFrame = me.CFrame
+end
+
+function dab5()
+warn('done dab 5')
+coin5 = game.Workspace.PickupItems:WaitForChild(dabcoins[5])
+me = game.Players.LocalPlayer.Character.HumanoidRootPart
+coin5.CFrame = me.CFrame
+end
+
+function dab6()
+warn('done dab 6')
+coin6 = game.Workspace.PickupItems:WaitForChild(dabcoins[6])
+me = game.Players.LocalPlayer.Character.HumanoidRootPart
+coin6.CFrame = me.CFrame
+end
+
+
+-- loop
+
+while wait(1) do
+	r = game.ReplicatedStorage.Remotes.UseTool
+	p = "Punch"
+	s = "Stomp"
+	f = "Food"
+	r:FireServer(p)
+	r:FireServer(s)
+	r:FireServer(f)
+		epic1()
+wait(0.5)
+epic2()
+wait()
+epic3()
+wait()
+epic4()
+wait()
+epic5()
+wait()
+epic6()
+wait()
+dab1()
+wait()
+dab2()
+wait()
+dab3()
+wait()
+dab4()
+wait()
+dab5()
+wait()
+dab6()
+end
