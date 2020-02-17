@@ -1,0 +1,86 @@
+guns = {"R870", "RayGun", "AWP", "M4A1", "G36C", "M14", "M16A2/M203", "M1911", "MP5k", "SVD"}
+badges = {"UltimateSecret", "HelpfulKillers", "TheWayOut", "AtomicBomb"}
+secretpaths = {"SecretPath1", "SecretPath2", "SecretPath3", "SecretPath4", "SecretPath5", "SecretPath6"}
+rooms = {"ExecutionRoom", "Hangar"}
+papers = {"Floor1", "YellowBedRoom", "MeetingRoom"}
+morphnames = {"Zombie Morph"}
+
+proot = game.Players.LocalPlayer.Character.HumanoidRootPart
+w = game.Workspace.AREA51
+w2 = game.Workspace.Spawns
+w3 = game.Workspace.AREA51.Outside
+
+proot.CFrame = w[guns[1]][guns[1].." Giver"]["PUT THE WEAPON IN THIS BRICK"].CFrame
+wait(1)
+proot.CFrame = w[guns[2]][guns[2].." Giver"]["PUT THE WEAPON IN THIS BRICK"].CFrame
+wait(1)
+proot.CFrame = w[guns[3]][guns[3].." Giver"]["PUT THE WEAPON IN THIS BRICK"].CFrame
+wait(1)
+proot.CFrame = w[guns[4]][guns[4].." Giver"]["PUT THE WEAPON IN THIS BRICK"].CFrame
+wait(1)
+proot.CFrame = w[guns[5]][guns[5].." Giver"]["PUT THE WEAPON IN THIS BRICK"].CFrame
+wait(1)
+proot.CFrame = w[guns[6]][guns[6].." Giver"]["PUT THE WEAPON IN THIS BRICK"].CFrame
+wait(1)
+proot.CFrame = w[guns[7]][guns[7].." Giver"]["PUT THE WEAPON IN THIS BRICK"].CFrame
+wait(1)
+proot.CFrame = w[guns[8]][guns[8].." Giver"]["PUT THE WEAPON IN THIS BRICK"].CFrame
+wait(1)
+proot.CFrame = w[guns[9]][guns[9].." Giver"]["PUT THE WEAPON IN THIS BRICK"].CFrame
+wait(1)
+proot.CFrame = w[guns[10]][guns[10].."Giver"]["PUT THE WEAPON IN THIS BRICK"].CFrame
+wait(1)
+warn('all guns given!')
+wait(0.5)
+warn('time for badges >:)')
+proot.CFrame = w.Badges[badges[1]].Platform.CFrame
+wait(1)
+proot.CFrame = w.Badges[badges[2]].Platform.CFrame
+wait(1)
+proot.CFrame = w.Badges[badges[3]].Platform.CFrame
+wait(1)
+proot.CFrame = w.Badges[badges[4]].Platform.CFrame
+wait(0.5)
+warn('done!')
+wait(1)
+warn('teleporting to the secretpaths now!')
+proot.CFrame = w[secretpaths[1]].Reward.CFrame
+wait(0.5)
+proot.CFrame = w[secretpaths[2]].Reward.CFrame
+wait(0.5)
+proot.CFrame = w[secretpaths[3]].Reward.CFrame
+wait(0.5)
+proot.CFrame = w[secretpaths[4]].Reward.CFrame
+wait(0.5)
+proot.CFrame = w[secretpaths[5]].Reward.CFrame
+wait(0.5)
+proot.CFrame = w[secretpaths[6]].Reward.CFrame
+wait(1)
+warn('teleporting to rooms now!')
+proot.CFrame = w[rooms[1]].Reward.CFrame
+wait(0.5)
+proot.CFrame = CFrame.new(Vector3.new(176.981522, 313.5, 561.509094))
+wait(0.5)
+proot.CFrame = CFrame.new(Vector3.new(184.736404, 314.102844, 437.213959))
+wait(1)
+warn('rooms done!')
+warn('teleporting to papers now!')
+wait(0.5)
+proot.CFrame = w.RadioactiveArea[papers[1]].Paper.CFrame
+wait(0.5)
+proot.CFrame = w[papers[2]].Buro.Paper.CFrame
+wait(0.5)
+proot.CFrame = w[papers[3]].DeadGuy.Paper.CFrame
+wait(1)
+warn('specials now!')
+warn('packapunch takes 25 seconds before next tp: requires kills! (10 at max)')
+warn('teleport commenced in 25 seconds!')
+proot.CFrame = game.Workspace.PACKAPUNCH.MainPart.CFrame
+wait(25)
+proot.CFrame = w["AlienExit"].Reward.CFrame
+wait(0.5)
+proot.CFrame = w3[rooms[2]].Right[morphnames[1]].TheButton.CFrame
+wait(1)
+warn('wait while we teleport you back to the spawn!')
+wait(3)
+proot.CFrame = CFrame.new(Vector3.new(331.699951, 511.5, 397.900024))
