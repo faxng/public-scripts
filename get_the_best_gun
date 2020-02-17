@@ -1,0 +1,10 @@
+togetgun = "RayGun"
+path = game.Workspace.AREA51
+path2 = game.Workspace.Spawns.SpawnLocation
+var1 = " Giver"
+myframe = game.Players.LocalPlayer.Character.HumanoidRootPart
+complete = path[togetgun][togetgun..var1]["PUT THE WEAPON IN THIS BRICK"]
+
+myframe.CFrame = complete.CFrame
+wait(1)
+myframe.CFrame = path2.CFrame * CFrame.new(myframe.Size.X/100, 10, 0)
